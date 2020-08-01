@@ -64,7 +64,6 @@ public class CalculatorController implements Initializable {
 
     private Button seven;
 
-}
 
     @FXML
     private void Calculation(ActionEvent event){
@@ -76,40 +75,40 @@ public class CalculatorController implements Initializable {
         }else if (event.getSource()== two){
             inputdisplay.appendText("2");
 
-    }else if (event.getSource()== three){
-        inputdisplay.appendText("3");
+        }else if (event.getSource()== three){
+            inputdisplay.appendText("3");
 
         }else if (event.getSource()== four){
-        inputdisplay.appendText("4");
+            inputdisplay.appendText("4");
 
         }else if (event.getSource()== five){
-        inputdisplay.appendText("5");
+            inputdisplay.appendText("5");
 
         }else if (event.getSource()== six){
-        inputdisplay.appendText("6");
+            inputdisplay.appendText("6");
 
         }else if (event.getSource()== seven){
-        inputdisplay.appendText("7");
+            inputdisplay.appendText("7");
 
         }else if (event.getSource()== eight){
-        inputdisplay.appendText("8");
+            inputdisplay.appendText("8");
 
         }else if (event.getSource()== nine){
-        inputdisplay.appendText("9");
+            inputdisplay.appendText("9");
 
         }else if (event.getSource()== zero){
-        inputdisplay.appendText("0");
+            inputdisplay.appendText("0");
 
         }
-        else if (event.getSource()== dot == 0) {
-        inputdisplay.appendText(".");
-        point = 1;
+        else if (event.getSource()== dot ) {
+            inputdisplay.appendText(".");
+            //double   point = 1;
 
         }else if (event.getSource()== div){
-       Double  input1 = Double.parseDouble ( (inputdisplay.getText ()) );
-        inputdisplay.setText("");
-        ps =3;
-        point =1 ;
+            Double input1 = Double.parseDouble ( (inputdisplay.getText ()) );
+            inputdisplay.setText("");
+            double ps =3;
+           double point =1 ;
         }
     }
 
@@ -117,3 +116,5 @@ public class CalculatorController implements Initializable {
     public void initialize (URL url, ResourceBundle resourceBundle) {
 
     }
+}
+
